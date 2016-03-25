@@ -20,17 +20,34 @@ A website for the on-boarding tutorials
 
 
 
-## Setup
+### Setup
 
 - make sure [node.js](http://nodejs.org) and [roots](http://roots.cx) are installed
 - clone this repo down and `cd` into the folder
 - run `npm install`
 - run `roots watch`
-- ???
-- get money
 
 
-## Deploying
+
+#### using SASS for css pre-processing
+
+- install accord and node-sass to [enable SASS compilation](https://github.com/jenius/accord/issues/108) 'npm install --save accord node-sass'
+- import accord and node-sass in dev and prod app manifest 
+'''
+accord = require 'accord'
+sass   = accord.load 'node-sass'
+'''
+- On line 14, change the line that says '''css_pipeline(files: 'assets/css/*.styl')''' to '''css_pipeline(files: 'assets/css/*.scss')'''
+- At the end of the file tab in once and add the final lines of code:
+'''
+	sass:
+		pretty: true
+'''
+- Change .styl files with .scss files. Delete all the files in the 'assets/css' directory of your project. Create a new file in 'assets/css' named 'master.scss'. This file is where you will start creating your sass files.
+- Use '.scss' file extension instead of '.sass' for all sass files
+
+
+### Deploying
 
 - If you just want to compile the production build, run `roots compile -e production` and it will build to public.
 - To deploy your site with a single command, run `roots deploy -to XXX` with `XXX` being whichever [ship](https://github.com/carrot/ship#usage) deployer you want to use.
