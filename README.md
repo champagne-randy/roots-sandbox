@@ -33,16 +33,16 @@ A website for the on-boarding tutorials
 
 - install accord and node-sass to [enable SASS compilation](https://github.com/jenius/accord/issues/108) 'npm install --save accord node-sass'
 - import accord and node-sass in dev and prod app manifest 
-'''
+```
 accord = require 'accord'
 sass   = accord.load 'node-sass'
-'''
-- On line 14, change the line that says '''css_pipeline(files: 'assets/css/*.styl')''' to '''css_pipeline(files: 'assets/css/*.scss')'''
+```
+- On line 14, change the line that says ```css_pipeline(files: 'assets/css/*.styl')``` to ```css_pipeline(files: 'assets/css/*.scss')```
 - At the end of the file tab in once and add the final lines of code:
-'''
+```
 	sass:
 		pretty: true
-'''
+```
 - Change .styl files with .scss files. Delete all the files in the 'assets/css' directory of your project. Create a new file in 'assets/css' named 'master.scss'. This file is where you will start creating your sass files.
 - Use '.scss' file extension instead of '.sass' for all sass files
 
