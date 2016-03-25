@@ -45,6 +45,7 @@ A website for the on-boarding tutorials
 ```
 p this project was developped by #[span= developer]
 ```
+- don't forget to add production 'locals' to 'app.production.cofee'
 
 
 
