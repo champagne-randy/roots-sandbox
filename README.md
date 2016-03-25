@@ -2,7 +2,7 @@
 
 
 
-# example
+# roots-example
 
 * Status: ✔ Active
 * Contributors: [@randychampagne](http://twitter.com/randychampagne)
@@ -26,6 +26,25 @@ A website for the on-boarding tutorials
 - clone this repo down and `cd` into the folder
 - run `npm install`
 - run `roots watch`
+
+
+
+#### optional confgurations to app.cofee
+
+- add this config to 'app.cofee' to enable clean urls
+```
+  server:
+    clean_urls: true
+```
+- add this config to create project global varibales that can be accessed in any template file
+```
+ locals:
+    developer: 'Randy Champagne'
+```
+- you can use locals in a jade template like so
+```
+p this project was developped by #[span= developer]
+```
 
 
 
