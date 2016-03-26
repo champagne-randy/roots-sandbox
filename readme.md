@@ -67,6 +67,19 @@ sass   = accord.load 'node-sass'
 - Use '.scss' file extension instead of '.sass' for all sass files
 
 
+
+#### using browserify for js pre-processing
+
+- install [roots-browserify](https://github.com/carrot/roots-browserify) module 'npm install roots-browserify --save'
+- import module into app.cofee ```browserify = require 'roots-browserify'```
+- add extension configuration
+```
+    browserify
+      files: 'assets/js/main.coffee'
+      out: 'js/build.js'
+```
+
+
 ### Deploying
 
 - If you just want to compile the production build, run `roots compile -e production` and it will build to public.
