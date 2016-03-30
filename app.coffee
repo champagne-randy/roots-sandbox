@@ -27,4 +27,10 @@ module.exports =
 
   locals:
     title: "Express.js Guide",
-    body: "The Comprehensive Book on Express.js"
+    author: "Randy Champagne",
+    body: "The Comprehensive Book on Express.js",
+    url: "/index",
+    isActive: true,
+    isChecked: false
+
+

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	.float-me
+		p
+			strong Ahoy Maytee!
+
+	style.
+		.float-me { 
+			height: 4em;
+			padding-top: 1em;
+			background: tan;
+			color: white;
+			text-align: center
+		}
+
+	script.
+		console.log("Hello from the inline script!")
+		setTimeout(function() {
+			console.log("Goodbye from inline script!")
+			window.location.href='index'
+		},5000)

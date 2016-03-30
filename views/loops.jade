@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h2.
+		Looping through an array
+
+	- var arr = ['php', 'node', 'ruby']
+
+	div
+		each value, index in arr
+			p= index+1 + ". " + value
+		br
+
+
+	h3.
+		Looping through an object
+
+	- var obj = { 'php': -1,'node': 2,'ruby': 1 }
+
+	div
+		each value, key in obj
+			p= key + ": " + value

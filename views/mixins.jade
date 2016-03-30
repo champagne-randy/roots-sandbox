@@ -1,0 +1,25 @@
+
+
+mixin row(items)
+	tr
+		each item, index in items
+			td= item
+
+mixin table(tableData)
+	table
+		each row, index in tableData
+			+row(row)
+
+mixin rollCall(students)
+	each student, index in students
+		p Hello #{student}!
+
+
+- var node = [{name: "express"}, {name: "hapi"}, {name: "derby"}]
++table(node)
+
+- var js = [{name: "backbone"}, {name: "angular"}, {name: "ember"}]
++table(js)
+
+- var students = ["Randy", "Vanessa", "Steph"]
++rollCall(students)
