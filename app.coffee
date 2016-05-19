@@ -2,6 +2,8 @@ axis         = require 'axis'
 rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 css_pipeline = require 'css-pipeline'
+accord       = require 'accord'
+sass         = accord.load 'node-sass'
 js_pipeline  = require 'js-pipeline'
 browserify   = require 'roots-browserify'
 babelify     = require 'babelify'
@@ -26,7 +28,7 @@ module.exports =
   ]
 
   extensions: [
-    css_pipeline(files: 'assets/css/*.styl')
+    css_pipeline(files: 'assets/css/styles.scss')
     js_pipeline(files: 'assets/js/**/*.js')
     #browserify
     #  files: 'assets/js/main.es6'

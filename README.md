@@ -1,10 +1,9 @@
 ![mobble](http://cloud.scott.ee/images/mobble.png)
 
-# Development
+# Shopify on Roots & Angular
 
-* Status: ✔ In Development
 * Contributors: [@randychampagne](http://twitter.com/randychampagne)
-* Description: This is the development environment
+* Description: This is a development sandbox
 * Author: [Randy Champagne](http://www.randychampagne.com)
 * Author URI: [http://www.randychampagne.com](http://www.randychampagne.com)
 * License: GNU General Public License v3.0
@@ -16,7 +15,7 @@
 
 ## About
 
-**[Roots Shopify Angular]()**
+**[Shopify on Roots & Angular]()**
 
 This is a sandbox where I am integrating Shopify's [Javascript Buy SDK]() with the Roots [Static Site Compiler]() via an [Angular]() web app
 
