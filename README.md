@@ -16,9 +16,9 @@
 
 ## About
 
-**[The Vaan Group](http://vaangroup.com/)<br>Brooklyn, NY**
+**[Roots Shopify Angular]()**
 
-Description Comming Soon
+This is a sandbox where I am integrating Shopify's [Javascript Buy SDK]() with the Roots [Static Site Compiler]() via an [Angular]() web app
 
 
 
