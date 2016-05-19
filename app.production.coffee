@@ -5,7 +5,7 @@ css_pipeline = require 'css-pipeline'
 #js_pipeline  = require 'js-pipeline'
 browserify   = require 'roots-browserify'
 babelify     = require 'babelify'
-wordpress    = require 'roots-wordpress'
+#wordpress    = require 'roots-wordpress'
 cmsEndpoint  = 'php-randytest2016.rhcloud.com'
 
 
@@ -33,10 +33,10 @@ module.exports =
       sourceMap: false
       transform: babelify
       out: 'js/main.js'
-    wordpress
-      site: cmsEndpoint
-      post_types:
-        post: { template: 'views/single.jade' }
+    #wordpress
+    #  site: cmsEndpoint
+    #  post_types:
+    #    post: { template: 'views/single.jade' }
     
   ]
 
