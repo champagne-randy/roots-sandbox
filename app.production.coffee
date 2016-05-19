@@ -2,7 +2,7 @@ axis         = require 'axis'
 rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 css_pipeline = require 'css-pipeline'
-#js_pipeline  = require 'js-pipeline'
+js_pipeline  = require 'js-pipeline'
 browserify   = require 'roots-browserify'
 babelify     = require 'babelify'
 #wordpress    = require 'roots-wordpress'
@@ -27,12 +27,12 @@ module.exports =
 
   extensions: [
     css_pipeline(files: 'assets/css/*.styl', minify: true, hash: true)
-    #js_pipeline(files: 'assets/js/*.coffee', out: 'js/app.js', minify: true, hash: true)
-    browserify
-      files: 'assets/js/main.es6'
-      sourceMap: false
-      transform: babelify
-      out: 'js/main.js'
+    js_pipeline(files: 'assets/js/*.coffee', out: 'js/app.js', minify: true, hash: true)
+    #browserify
+    #  files: 'assets/js/main.es6'
+    #  sourceMap: false
+    #  transform: babelify
+    #  out: 'js/main.js'
     #wordpress
     #  site: cmsEndpoint
     #  post_types:
