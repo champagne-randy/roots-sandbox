@@ -1,16 +1,15 @@
-extends layout
+extends ./_layout
 
 block content
-  h3 Welcome to roots!
-  :markdown
-    Find tutorials and documentation at http://roots.cx : )
+  //- h3 Welcome to roots!
+  //- :markdown
+  //-   Find tutorials and documentation at http://roots.cx : )
 
-  // Once you've added a content type and posts into Contentful
-  // go update your app.coffee config and then test out iterating
-  // over your content type here!
+  //- Once you've added a content type and posts into Contentful
+  //- go update your app.coffee config and then test out iterating
+  //- over your content type here!
 
-  //- ul
-    //- - for post in contentful.posts
-      //- li
-        //- h4= post.title
-        //- != marked(post.body)
+  ul
+    - for post in contentful.posts
+      li
+        h4: a(href= post._url)= post.title
